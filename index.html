@@ -5,7 +5,7 @@
   <title>Farmacia de Turno - Andresito</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Fonts -->
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
   <!-- Iconos -->
@@ -21,13 +21,20 @@
     <h1>Farmacia de Turno</h1>
 
     <p class="info-turno">
-      Los turnos comienzan a las 08:00 y finalizan a las 08:00 del día siguiente. 
-      El sistema muestra el turno correspondiente al día en que inició.
+      🕗 Turnos vigentes: 08:00 → 08:00
     </p>
 
-    <div id="fecha" class="fecha">Cargando fecha...</div>
+    <div class="estado">
+      🟢 Turno activo en este momento
+    </div>
 
-    <div id="farmacia" class="farmacia">Cargando turno...</div>
+    <div id="fecha" class="fecha">
+      Cargando fecha...
+    </div>
+
+    <div id="farmacia" class="farmacia">
+      Cargando turno...
+    </div>
 
     <button id="btn-maps" class="btn btn-maps">
       <i class="fas fa-location-dot"></i>
