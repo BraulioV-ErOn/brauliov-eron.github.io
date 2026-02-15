@@ -1,60 +1,45 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  transition: background 0.5s ease;
-}
-
-/* Fondo día */
-body.dia {
   background: linear-gradient(135deg, #1e3c52, #2c5364);
 }
 
-/* Fondo noche */
-body.noche {
-  background: linear-gradient(135deg, #0f2027, #1b2735, #090a0f);
-}
-
 .card {
-  background: rgba(255, 255, 255, 0.07);
-  backdrop-filter: blur(15px);
-  padding: 30px;
-  border-radius: 22px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(18px);
   width: 92%;
-  max-width: 480px;
+  max-width: 460px;
+  padding: 28px;
+  border-radius: 24px;
   text-align: center;
-  box-shadow: 0 20px 45px rgba(0,0,0,0.35);
-  animation: fadeIn 0.6s ease forwards;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(25px); }
-  to { opacity: 1; transform: translateY(0); }
+  box-shadow: 0 20px 50px rgba(0,0,0,0.35);
 }
 
 h1 {
-  color: white;
-  margin-bottom: 6px;
-  font-size: 26px;
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .info-turno {
-  color: #cfe8f3;
-  font-size: 13px;
-  margin-bottom: 12px;
+  font-size: 14px;
+  color: #e6f4ff;
+  line-height: 1.5;
+  margin-bottom: 15px;
 }
 
 .estado {
-  background: #1ebe5d;
+  background: #22c55e;
   color: white;
-  padding: 6px 12px;
+  padding: 6px 14px;
   border-radius: 20px;
   font-size: 13px;
-  display: inline-block;
   margin-bottom: 15px;
+  display: inline-block;
 }
 
 .fecha {
@@ -65,7 +50,7 @@ h1 {
 
 .farmacia {
   color: #ffffff;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   margin-bottom: 25px;
 }
@@ -73,24 +58,12 @@ h1 {
 .btn {
   width: 100%;
   padding: 16px;
-  border: none;
   border-radius: 14px;
+  border: none;
   font-size: 17px;
   font-weight: 600;
   cursor: pointer;
   margin-bottom: 14px;
-  transition: 0.2s ease;
-}
-
-.btn-wpp {
-  background: #25D366;
-  color: white;
-  font-size: 18px;
-}
-
-.btn-wpp:hover {
-  background: #1ebe5d;
-  transform: translateY(-2px);
 }
 
 .btn-maps {
@@ -98,7 +71,7 @@ h1 {
   color: white;
 }
 
-.btn-maps:hover {
-  background: #2f6adf;
-  transform: translateY(-2px);
+.btn-wpp {
+  background: #25D366;
+  color: white;
 }
