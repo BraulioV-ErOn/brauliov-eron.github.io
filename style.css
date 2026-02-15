@@ -10,60 +10,49 @@ body {
 
 .card {
   background: rgba(255,255,255,0.1);
-  backdrop-filter: blur(18px);
-  width: 92%;
-  max-width: 460px;
+  backdrop-filter: blur(15px);
+  width: 90%;
+  max-width: 420px;
   padding: 28px;
-  border-radius: 24px;
+  border-radius: 20px;
   text-align: center;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  color: white;
 }
 
 h1 {
-  color: #ffffff;
-  font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  font-weight: 700;
 }
 
-.info-turno {
+.info {
   font-size: 14px;
-  color: #e6f4ff;
-  line-height: 1.5;
-  margin-bottom: 15px;
-}
-
-.estado {
-  background: #22c55e;
-  color: white;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 13px;
-  margin-bottom: 15px;
-  display: inline-block;
+  opacity: 0.85;
+  margin-bottom: 16px;
 }
 
 .fecha {
-  color: #ffffff;
-  font-size: 14px;
-  margin-bottom: 10px;
+  font-size: 15px;
+  margin-bottom: 12px;
+  opacity: 0.9;
 }
 
 .farmacia {
-  color: #ffffff;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .btn {
   width: 100%;
-  padding: 16px;
+  padding: 15px;
   border-radius: 14px;
   border: none;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
+  margin-bottom: 12px;
   cursor: pointer;
-  margin-bottom: 14px;
+  transition: 0.3s;
 }
 
 .btn-maps {
@@ -71,7 +60,15 @@ h1 {
   color: white;
 }
 
+.btn-maps:hover {
+  background: #2563eb;
+}
+
 .btn-wpp {
-  background: #25D366;
+  background: #22c55e;
   color: white;
+}
+
+.btn-wpp:hover {
+  background: #16a34a;
 }
