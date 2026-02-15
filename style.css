@@ -1,92 +1,75 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
-
 body {
-  height: 100vh;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   display: flex;
-  align-items: center;
   justify-content: center;
-  color: white;
+  align-items: center;
+  height: 100vh;
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(20px);
-  border-radius: 25px;
-  padding: 40px 30px;
-  width: 90%;
-  max-width: 420px;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(15px);
+  padding: 40px;
+  border-radius: 18px;
+  width: 420px;
   text-align: center;
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
-  animation: fadeIn 0.6s ease-in-out;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
 }
 
-.titulo {
-  font-size: 20px;
-  opacity: 0.8;
-  margin-bottom: 8px;
+h1 {
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-weight: 700;
 }
 
-.fecha {
+.info-turno {
+  color: #d6e6f2;
   font-size: 14px;
-  opacity: 0.7;
+  line-height: 1.6;
   margin-bottom: 20px;
 }
 
-.contenido {
-  font-size: 26px;
-  font-weight: bold;
-  margin-bottom: 30px;
+.fecha {
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-weight: 500;
 }
 
-button {
+.farmacia {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.btn {
   width: 100%;
   padding: 14px;
-  margin-top: 12px;
   border: none;
-  border-radius: 14px;
+  border-radius: 10px;
   font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
-  transition: 0.3s ease;
+  margin-bottom: 12px;
+  transition: 0.3s;
 }
 
 .btn-maps {
-  background: #72bd99;
-  color: black;
-  font-weight: 600;
-}
-
-.btn-maps:hover {
-  background: #5aa885;
-}
-
-.btn-call {
-  background: rgba(255, 255, 255, 0.15);
+  background: #3498db;
   color: white;
 }
 
-.btn-call:hover {
-  background: rgba(255, 255, 255, 0.25);
+.btn-maps:hover {
+  background: #2980b9;
 }
 
-footer {
-  margin-top: 25px;
-  font-size: 12px;
-  opacity: 0.6;
+.btn-wpp {
+  background: #25D366;
+  color: white;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.btn-wpp:hover {
+  background: #1ebc59;
 }
