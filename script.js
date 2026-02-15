@@ -9,7 +9,14 @@ async function cargarTurno() {
     const ahora = new Date();
     const horaActual = ahora.getHours();
 
-    // Si es antes de las 08:00, restamos un día
+    // Fondo dinámico día/noche
+    if (horaActual >= 8 && horaActual < 20) {
+      document.body.classList.add("dia");
+    } else {
+      document.body.classList.add("noche");
+    }
+
+    // Ajuste turno 08:00
     if (horaActual < 8) {
       ahora.setDate(ahora.getDate() - 1);
     }
